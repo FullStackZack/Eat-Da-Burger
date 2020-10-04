@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(136, 136, 136);
+    font-family: 'Francois One', sans-serif;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 80px;
+    color: rgb(240, 220, 42);
+}
+
+img {
+    padding: 20px;
+    padding-bottom: 40px;
+}
+
+
+#add_burger {
+    margin: 15px;
+    align-self: center;
+}
+
+.container {
+    height: 550px;
+    position: relative;
+    border: 3px solid black;
+}
+
+.row {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+h2 {
+    text-align: justify;
+    font-size: 45px;
+}
+
+li {
+    font-size: 24px;
+    color: rgb(231, 33, 33);
+    padding: 5px;
+}
+
+.devBurg {
+    color: darkgreen;
+}

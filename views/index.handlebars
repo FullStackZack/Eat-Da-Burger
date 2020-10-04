@@ -1,12 +1,12 @@
-
-
+<h1>Eat Da Burger!</h1>
 <div class="container">
     <div class="row">
         <div class="col-md-4">
+           <h2>Time To Eat!</h2>
            <ul>
                {{#each burgers}}
                   {{#unless devoured}}
-                     <li>{{burger_name}} <button class="devouredbtn" data-id={{id}}>Time To Eat!...</button></li>
+                     <li>{{burger_name}} <button class="devouredbtn" data-id={{id}}>DEVOUR</button></li>
                   {{/unless}}
                {{/each}}
            </ul>
@@ -15,14 +15,17 @@
         <div class="col-md-4">
        
             <img class="w-100" src="/assets/img/burger.png" alt="Photo of Burger">
-            Enter a Burger!<input type="text" id="burger"><button  id="add_burger">Add Burger!</button>
+            Enter a Burger! <input type="text" id="burger">
+            <br>
+            <button  id="add_burger">Add Burger!</button>
 
         </div>
         <div class="col-md-4">
+           <h2>Devoured Burgers</h2>
             <ul>
                {{#each burgers}}
                   {{#if devoured}}
-                     <li>{{burger_name}}</li>
+                     <li class="devBurg">{{burger_name}}</li>
                   {{/if}}
                {{/each}}
             </ul>
@@ -31,4 +34,3 @@
         </div>
     </div>
 </div>
-<h1>Eat Da Burger</h1>
